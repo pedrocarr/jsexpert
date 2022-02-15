@@ -1,5 +1,4 @@
 const { readFile } = require('fs').promises
-const { join } = require('path')
 const { error } = require('./constants')
 const DEFAULT_OPTION = {
     maxLines: 3,
@@ -15,8 +14,7 @@ class File {
     }
 
     static async getFileContent(filePath) {
-        const fileName = join(__dirname, filePath)
-        return (await readFile(fileName)).toString("utf8")
+        return (await readFile(filePath)).toString("utf8")
     }
 
     static isValid(csvString, options = DEFAULT_OPTION) {
@@ -42,10 +40,13 @@ class File {
 
         return { valid: true }
     }
+    static parseCSVToJSON(csvString) {
+        const lines = csvString.split('\n')
+        // remove o primeiro item e joga na variável
+        const firstLine = lines.shift()
+        
+    }
 }
-(async () => {
-    // const result = await File.csvToJson("./../mocks/threeItems-valid.csv")
-    const result = await File.csvToJson("./../mocks/fourItems-invalid.csv")
-    // const result = await File.csvToJson("./../mocks/invalid-header.csv")
-    console.log('result', result)
-})();
+
+
+module.exports = File
