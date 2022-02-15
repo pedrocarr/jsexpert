@@ -44,7 +44,15 @@ class File {
         const lines = csvString.split('\n')
         // remove o primeiro item e joga na variável
         const firstLine = lines.shift()
-        
+        const header = firstLine.split(',')
+        const users = lines.map(line => {
+            const columns = line.split(',')
+            let user = {}
+            for(const index in columns) {
+                user[header[index]] = columns[index]
+            }
+        })
+
     }
 }
 
