@@ -1,8 +1,8 @@
 const { error } = require('./src/constants')
 const File = require('./src/file')
-const { rejects, deepStrictEqual } = require('assert');
-
-(async () => { 
+const { rejects, deepStrictEqual } = require('assert')
+;
+(async () => {
     {
         const filePath = './mocks/emptyFile-invalid.csv'
         const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE)
@@ -14,35 +14,32 @@ const { rejects, deepStrictEqual } = require('assert');
         const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE)
         const result = File.csvToJson(filePath)
         await rejects(result, rejection)
-        
     }
     {
         const filePath = './mocks/threeItems-valid.csv'
-        const result = File.csvToJson(filePath)
+        const result = await File.csvToJson(filePath)
         const expected = [
             {
-              "id": 123,
-              "name": "Pedro Carvalho",
-              "profession": "JavaScript Developer",
-              "age": 31
+                "name": "Erick Wendel",
+                "id": 123,
+                "profession": "Javascript Instructor",
+                "birthDay": 1995
             },
             {
-              "id": 345,
-              "name": "Felipe Carvalho",
-              "profession": "Salesman",
-              "age": 33
+                "name": "Xuxa da Silva",
+                "id": 321,
+                "profession": "Javascript Specialist",
+                "birthDay": 1940
             },
             {
-              "id": 365,
-              "name": "Glaucio Carvalho",
-              "profession": "Politics",
-              "age": 63
+                "name": "Joaozinho",
+                "id": 231,
+                "profession": "Java Developer",
+                "birthDay": 1990
             }
-          ]
+        ]
 
-          deepStrictEqual(result, expected)
+        deepStrictEqual(JSON.stringify(result), JSON.stringify(expected))
+
     }
-    
-
-       
 })()
