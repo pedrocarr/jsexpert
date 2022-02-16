@@ -1,0 +1,1 @@
+const Fibonacci = require('./fibonacci')
