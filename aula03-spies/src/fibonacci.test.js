@@ -19,7 +19,11 @@ dado 5
     {
         const fibonacci = new Fibonacci()
         const spy = sinon.spy(fibonacci, fibonacci.execute.name)
-        fibonacci.execute(3)
+        // generators retornam iterators, (.next)
+        // existem 3 formas de ler os dados 
+        // usando as funções .next, for await e rest/spread
+
+        for await(const i of fibonacci.execute(3)) {}
         // nosso algoritmo sempre vai começar do 0
         const expectedCallCount = 4
         assert.deepStrictEqual(spy.callCount, expectedCallCount)
