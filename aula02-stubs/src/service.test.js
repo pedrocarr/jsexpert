@@ -42,6 +42,8 @@ const mocks = {
             "surfaceWater": "40",
             appearedIn: 2
         }
+        const results = await service.getPlanets(BASE_URL_2)
+        deepStrictEqual(results, expected)
     }
    
 })()
