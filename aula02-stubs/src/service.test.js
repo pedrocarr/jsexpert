@@ -3,9 +3,11 @@ const sinon = require('sinon')
 const { deepStrictEqual } = require('assert')
 const BASE_URL_1 = "https://swapi.dev/api/planets/1/"
 const BASE_URL_2 = "https://swapi.dev/api/planets/2/"
+const BASE_URL_4 = "https://swapi.dev/api/planets/4/"
 const mocks = {
     tatooine: require('./mocks/tatooine.json'),
     alderaan: require('./mocks/alderaan.json'),
+    hoth: require('./mocks/hoth.json'),
 }
 
 
@@ -26,6 +28,10 @@ const mocks = {
     stub
         .withArgs(BASE_URL_2)
         .resolves(mocks.alderaan)
+    stub
+        .withArgs(BASE_URL_4)
+        .resolves(mocks.hoth)
+    
     {
         const expected = {
             "name": "Tatooine",
@@ -44,6 +50,15 @@ const mocks = {
         }
         const results = await service.getPlanets(BASE_URL_2)
         deepStrictEqual(results, expected)
+    }
+    {
+        const expected = {
+            "name": "Hoth",
+            "surfaceWater": "100",
+            appearedIn: 3
+        }
+        const results = await service.getPlanets(BASE_URL_4)
+    deepStrictEqual(results, expected)
     }
    
 })()
