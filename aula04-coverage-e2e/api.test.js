@@ -19,4 +19,14 @@ describe("API Suite test", () => {
       assert.deepStrictEqual(response.text, "Hello World!")
     });
   });
+  describe("/login", () => {
+    it("should login successfully on the login route and return HHTP Status 200", async () => {
+      const response = await request(app)
+        .post("/login")
+        .send({ username: "PedroCarvalho", password: "123"})
+        .expect(200);
+      assert.deepStrictEqual(response.text, "Logging has succeeded!")
+    });
+  });
 });
+  
