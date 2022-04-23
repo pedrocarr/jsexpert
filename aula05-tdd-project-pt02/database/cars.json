@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2c475078-94d0-4e26-8afc-1d5503e39f29",
+    "name": "Model T",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "1b97f005-a27c-4648-b9a8-54cc4b509d41",
+    "name": "Alpine",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "3decc3d7-d35a-483c-96c4-b3d6f4024853",
+    "name": "Alpine",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  }
+]
