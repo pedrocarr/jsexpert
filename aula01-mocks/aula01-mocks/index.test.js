@@ -20,22 +20,22 @@ const { rejects, deepStrictEqual } = require('assert')
         const result = await File.csvToJson(filePath)
         const expected = [
             {
-                "name": "Erick Wendel",
+                "name": "Pedro Carvalho",
                 "id": 123,
                 "profession": "Javascript Instructor",
-                "birthDay": 1995
+                "birthDay": 1996
             },
             {
                 "name": "Xuxa da Silva",
                 "id": 321,
                 "profession": "Javascript Specialist",
-                "birthDay": 1940
+                "birthDay": 1941
             },
             {
                 "name": "Joaozinho",
                 "id": 231,
                 "profession": "Java Developer",
-                "birthDay": 1990
+                "birthDay": 1991
             }
         ]
 
