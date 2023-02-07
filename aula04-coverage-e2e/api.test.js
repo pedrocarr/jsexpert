@@ -20,7 +20,7 @@ describe("API Suite test", () => {
     });
   });
   describe("/login", () => {
-    it("should login successfully on the login route and return HHTP Status 200", async () => {
+    it("should login successfully on the login route and return HTTP Status 200", async () => {
       const response = await request(app)
         .post("/login")
         .send({ username: "PedroCarvalho", password: "123"})
@@ -38,4 +38,4 @@ describe("API Suite test", () => {
     });
   });
 });
-  
+
