@@ -1,22 +1,22 @@
 [
   {
-    "id": "2c475078-94d0-4e26-8afc-1d5503e39f29",
-    "name": "Model T",
+    "id": "52eaec41-3fc3-4cad-aa5b-84ea205afdff",
+    "name": "Cruze",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "1b97f005-a27c-4648-b9a8-54cc4b509d41",
-    "name": "Alpine",
+    "id": "16918c68-6999-4b8f-b349-5ba702125064",
+    "name": "LeBaron",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "3decc3d7-d35a-483c-96c4-b3d6f4024853",
-    "name": "Alpine",
-    "releaseYear": 2021,
+    "id": "f2cf046c-e287-45a3-83e2-740131de5e16",
+    "name": "ATS",
+    "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   }

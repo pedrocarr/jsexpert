@@ -1,12 +1,12 @@
 [
   {
-    "id": "ee5bb75e-6fcd-411c-9551-961998f3225d",
-    "name": "Convertible",
+    "id": "48cbfb2a-09f0-4b88-86c8-9111b68246aa",
+    "name": "Hatchback",
     "carIds": [
-      "2c475078-94d0-4e26-8afc-1d5503e39f29",
-      "1b97f005-a27c-4648-b9a8-54cc4b509d41",
-      "3decc3d7-d35a-483c-96c4-b3d6f4024853"
+      "52eaec41-3fc3-4cad-aa5b-84ea205afdff",
+      "16918c68-6999-4b8f-b349-5ba702125064",
+      "f2cf046c-e287-45a3-83e2-740131de5e16"
     ],
-    "price": 99.2
+    "price": 24.85
   }
 ]
