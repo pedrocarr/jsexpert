@@ -6,8 +6,8 @@ class Customer extends Base {
     super({ id, name })
 
     this.age = age;
-  
-  
+
+
   }
 
 }

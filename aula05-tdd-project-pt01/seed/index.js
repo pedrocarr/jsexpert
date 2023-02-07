@@ -38,7 +38,7 @@ for(let index = 0; index <= ITEMS_AMOUNT; index++) {
   customers.push(customer)
 }
 
-const write = (filename, data) => writeFile(join(seederBaseFolder, filename), JSON.stringify(data))
+const write = (filename, data) => writeFile(join(seederBaseFolder, filename), JSON.stringify(data, null, 2))
 
 ;(async () => {
   await write('cars.json', cars)

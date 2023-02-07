@@ -9,7 +9,7 @@ class CarService {
     const listLength = list.length
     return Math.floor(Math.random() * listLength)
   }
-  
+
   async getAvailableCar(carCategory) {
     return null
   }

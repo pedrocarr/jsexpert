@@ -1,12 +1,12 @@
 [
   {
-    "id": "48cbfb2a-09f0-4b88-86c8-9111b68246aa",
-    "name": "Hatchback",
+    "id": "74d920a6-c4e7-4a05-8b33-a750a6ea9736",
+    "name": "Coupe",
     "carIds": [
-      "52eaec41-3fc3-4cad-aa5b-84ea205afdff",
-      "16918c68-6999-4b8f-b349-5ba702125064",
-      "f2cf046c-e287-45a3-83e2-740131de5e16"
+      "e18c51ca-d31b-403a-9773-7ba51330ba99",
+      "ef6551c7-2987-45f9-8599-25b413f44b29",
+      "ba240066-10a5-49fa-afc5-59b3f278b1bf"
     ],
-    "price": 24.85
+    "price": 81.63
   }
 ]

@@ -1,21 +1,21 @@
 [
   {
-    "id": "52eaec41-3fc3-4cad-aa5b-84ea205afdff",
-    "name": "Cruze",
+    "id": "e18c51ca-d31b-403a-9773-7ba51330ba99",
+    "name": "Corvette",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "16918c68-6999-4b8f-b349-5ba702125064",
-    "name": "LeBaron",
+    "id": "ef6551c7-2987-45f9-8599-25b413f44b29",
+    "name": "Altima",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "f2cf046c-e287-45a3-83e2-740131de5e16",
-    "name": "ATS",
+    "id": "ba240066-10a5-49fa-afc5-59b3f278b1bf",
+    "name": "Countach",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
