@@ -33,11 +33,11 @@ describe('CarService Suite Tests', () => {
   //   carCategory.ids = [car.id]
 
   //   const result = await carService.getAvailableCar(carCategory)
-  //   const expected = car 
-   
+  //   const expected = car
+
 
   //   expect(result).to.be.deep.equal(expected)
-    
+
 
   // })
 })
