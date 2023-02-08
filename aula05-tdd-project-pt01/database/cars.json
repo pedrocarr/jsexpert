@@ -1,1 +1,23 @@
-[{"id":"969225c3-ccbe-4d4e-8161-fab15d472b4f","name":"A8","releaseYear":2023,"available":true,"gasAvailable":true},{"id":"66b908db-328c-4f66-896a-384834b7cbf5","name":"Mercielago","releaseYear":2022,"available":true,"gasAvailable":true},{"id":"ccf8660a-ffa8-49e1-a169-0f4ba5706558","name":"Taurus","releaseYear":2023,"available":true,"gasAvailable":true}]
+[
+  {
+    "id": "0d1ba866-ef76-4b42-ba3b-aef6f5079e72",
+    "name": "Sentra",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "929f84f7-37ea-4f1f-9055-bde0f061fd58",
+    "name": "Alpine",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "295fde37-c6b5-4855-9870-ddfd554faa5c",
+    "name": "Model S",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  }
+]

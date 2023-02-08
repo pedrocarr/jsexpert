@@ -1,1 +1,12 @@
-[{"id":"8c19ac67-8d69-4c9b-abe9-7319529d5038","name":"Coupe","carIds":["969225c3-ccbe-4d4e-8161-fab15d472b4f","66b908db-328c-4f66-896a-384834b7cbf5","ccf8660a-ffa8-49e1-a169-0f4ba5706558"],"price":33.98}]
+[
+  {
+    "id": "9716d02f-1cd4-4360-aa8a-6d6c1620393f",
+    "name": "Cargo Van",
+    "carIds": [
+      "0d1ba866-ef76-4b42-ba3b-aef6f5079e72",
+      "929f84f7-37ea-4f1f-9055-bde0f061fd58",
+      "295fde37-c6b5-4855-9870-ddfd554faa5c"
+    ],
+    "price": 65.89
+  }
+]
