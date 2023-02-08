@@ -1,12 +1,12 @@
 [
   {
-    "id": "74d920a6-c4e7-4a05-8b33-a750a6ea9736",
-    "name": "Coupe",
+    "id": "a1d4af60-f828-4018-b333-e37710dae26f",
+    "name": "Extended Cab Pickup",
     "carIds": [
-      "e18c51ca-d31b-403a-9773-7ba51330ba99",
-      "ef6551c7-2987-45f9-8599-25b413f44b29",
-      "ba240066-10a5-49fa-afc5-59b3f278b1bf"
+      "412bc674-b269-4cee-9798-d16f02d2f0c5",
+      "2ec874c0-9bad-4ff8-9628-01a8b064b612",
+      "bf23de17-1529-4d8c-ada1-bb3197842d1f"
     ],
-    "price": 81.63
+    "price": 83.89
   }
 ]

@@ -1,10 +1,20 @@
-name: Build
+name: Aula02_stubs
 on:
   push:
-    branches: [master]
+    paths:
+      - 'aula02-stubs/**'
+      - '.github/workflows/**'
+    branches:
+      - master
+
   pull_request:
-    branches: [master]
-  workflow_dispatch:
+    paths:
+      - 'aula02-stubs/**'
+      - '.github/workflows/**'
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 permissions:
   pull-requests: read # allows SonarCloud to decorate PRs with analysis results
@@ -18,11 +28,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: '17.x'
       - name: Install dependencies
-        run: cd aula04-coverage-e2e; npm ci
-      - name: Run Jest coverage
-        run: cd aula04-coverage-e2e; npm run test:cov
+        run: cd aula02-stubs; npm ci
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

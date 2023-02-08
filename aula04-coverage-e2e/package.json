@@ -14,7 +14,7 @@
     "nyc": "^15.1.0"
   },
   "scripts": {
-    "test": "npx mocha -w --parallel *.test.js",
-    "test:cov": "npx nyc npx mocha --parallel *.test.js"
+    "test": "npx mocha -w  --parallel **/*.test.js",
+    "test:cov": "npx nyc --reporter=lcov npx mocha --parallel **/*.test.js"
   }
 }

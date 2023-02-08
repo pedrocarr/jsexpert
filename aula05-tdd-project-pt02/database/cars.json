@@ -1,21 +1,21 @@
 [
   {
-    "id": "e18c51ca-d31b-403a-9773-7ba51330ba99",
-    "name": "Corvette",
+    "id": "412bc674-b269-4cee-9798-d16f02d2f0c5",
+    "name": "Volt",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "ef6551c7-2987-45f9-8599-25b413f44b29",
+    "id": "2ec874c0-9bad-4ff8-9628-01a8b064b612",
+    "name": "Alpine",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "bf23de17-1529-4d8c-ada1-bb3197842d1f",
     "name": "Altima",
-    "releaseYear": 2022,
-    "available": true,
-    "gasAvailable": true
-  },
-  {
-    "id": "ba240066-10a5-49fa-afc5-59b3f278b1bf",
-    "name": "Countach",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
