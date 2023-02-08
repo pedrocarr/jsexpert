@@ -3,6 +3,7 @@ const DEFAULT_USER = {
   username: "PedroCarvalho",
   password: "123"
 }
+const PORT = 3000
 
 
 const routes = {
@@ -48,7 +49,7 @@ const handler = (req, res) => {
 }
 
 const app = http.createServer(handler)
-                .listen(3000, () => console.log('Server is running at http://localhost:3000'))
+                .listen(PORT, () => console.log(`app listening on ${PORT}`));
 
 
 module.exports = app
