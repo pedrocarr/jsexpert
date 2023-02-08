@@ -5,7 +5,7 @@
   "main": "api.js",
   "scripts": {
     "test": "npx mocha -w  --parallel *.test.js",
-    "test:cov": "npx nyc npx mocha --parallel *.test.js"
+    "test:cov": "npx nyc --reporter=lcov npx mocha --parallel *.test.js"
   },
   "keywords": [],
   "author": "",
