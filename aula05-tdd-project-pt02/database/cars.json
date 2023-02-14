@@ -1,21 +1,21 @@
 [
   {
-    "id": "412bc674-b269-4cee-9798-d16f02d2f0c5",
-    "name": "Volt",
+    "id": "17c8959e-d8eb-40d1-a06e-3c8eca5947fb",
+    "name": "Sentra",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "2ec874c0-9bad-4ff8-9628-01a8b064b612",
-    "name": "Alpine",
+    "id": "c4b41bf9-ff80-4d5b-b60c-bc3a100777ab",
+    "name": "911",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": "bf23de17-1529-4d8c-ada1-bb3197842d1f",
-    "name": "Altima",
+    "id": "de8df5e8-cda4-4e8e-acbe-56263d21defd",
+    "name": "Jetta",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true
