@@ -14,7 +14,7 @@ const mocks = {
 ;(async () => {
 
     // {
-    //     // vai para internet 
+    //     // vai para internet
     //     const service = new Service()
     //     const withoutStub = await service.makeRequest(BASE_URL_2)
     //     console.log(JSON.stringify(withoutStub))
@@ -31,7 +31,7 @@ const mocks = {
     stub
         .withArgs(BASE_URL_4)
         .resolves(mocks.hoth)
-    
+
     {
         const expected = {
             "name": "Tatooine",
@@ -60,5 +60,5 @@ const mocks = {
         const results = await service.getPlanets(BASE_URL_4)
     deepStrictEqual(results, expected)
     }
-   
+
 })()
