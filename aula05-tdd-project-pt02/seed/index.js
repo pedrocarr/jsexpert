@@ -3,9 +3,9 @@ const Customer = require('../src/entities/customer');
 const CarCategory = require('../src/entities/carCategory');
 
 const faker = require('faker')
+const ITEMS_AMOUNT = 2
 const { join } = require('path')
 const seederBaseFolder = join(__dirname, '../', 'database')
-const ITEMS_AMOUNT = 2
 const { writeFile } = require('fs/promises')
 
 const carCategory = new CarCategory({

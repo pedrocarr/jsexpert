@@ -55,10 +55,10 @@ const mocks = {
         const expected = {
             "name": "Hoth",
             "surfaceWater": "100",
-            appearedIn: 3
+            appearedIn: 1
         }
         const results = await service.getPlanets(BASE_URL_4)
-    deepStrictEqual(results, expected)
+        deepStrictEqual(results, expected)
     }
 
 })()
