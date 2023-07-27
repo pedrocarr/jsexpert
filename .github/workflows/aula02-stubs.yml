@@ -2,14 +2,14 @@ name: Aula02_stubs
 on:
   push:
     paths:
-      - 'aula02-stubs/**'
+      - 'module2/aula02-stubs/**'
       - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
-      - 'aula02-stubs/**'
+      - 'module2/aula02-stubs/**'
       - '.github/workflows/**'
     types:
       - opened
@@ -30,11 +30,11 @@ jobs:
         with:
           node-version: '17.x'
       - name: Install dependencies
-        run: cd aula02-stubs; npm ci
+        run: cd module2/aula02-stubs; npm ci
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectBaseDir: aula02-stubs
+          projectBaseDir: module2/aula02-stubs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

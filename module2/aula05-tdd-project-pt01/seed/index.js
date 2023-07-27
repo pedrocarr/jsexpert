@@ -1,7 +1,7 @@
 const faker = require('faker')
-const Car = require('./../src/entities/car');
-const Customer = require('./../src/entities/customer');
-const CarCategory = require('./../src/entities/carCategory');
+const Car = require('../src/entities/car');
+const Customer = require('../src/entities/customer');
+const CarCategory = require('../src/entities/carCategory');
 
 const { join } = require('path')
 const seederBaseFolder = join(__dirname, '../', 'database')
