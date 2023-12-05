@@ -1,15 +1,15 @@
-name: Aula02_stubs
+name: example_test_e2e
 on:
   push:
     paths:
-      - 'superModule/aula02-stubs/**'
+      - 'superModule/example-test-e2e/**'
       - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
-      - 'superModule/aula02-stubs/**'
+      - 'superModule/example-test-e2e/**'
       - '.github/workflows/**'
     types:
       - opened
@@ -30,11 +30,13 @@ jobs:
         with:
           node-version: '17.x'
       - name: Install dependencies
-        run: cd superModule/aula02-stubs; npm ci
+        run: cd superModule/example-test-e2e; npm ci
+      - name: Run NYC coverage
+        run: cd superModule/example-test-e2e; npm run test:cov
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectBaseDir: superModule/aula02-stubs
+          projectBaseDir: superModule/example-test-e2e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

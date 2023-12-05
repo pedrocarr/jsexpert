@@ -1,15 +1,15 @@
-name: Aula01_mocks
+name: example_spies
 on:
   push:
     paths:
-      - 'superModule/aula01-mocks/**'
+      - 'superModule/example-stubs/**'
       - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
-      - 'superModule/aula01-mocks/**'
+      - 'superModule/example-stubs/**'
       - '.github/workflows/**'
     types:
       - opened
@@ -29,11 +29,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '17.x'
+      - name: Install dependencies
+        run: cd superModule/example-spies; npm ci
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectBaseDir: superModule/aula01-mocks
+          projectBaseDir: superModule/example-spies
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
