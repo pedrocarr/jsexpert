@@ -1,7 +1,7 @@
 
 # Playing with Tests, GitHub Actions and Sonar in Javascript
 This project is to provide examples of mocks, stubs, spies and e2e tests.
-The example 05 folder is a TDD approach to a specific use case.
+The example TDD folder is a TDD approach to a specific use case.
 
 ## Go to the each folder and look for the PACKAGE.JSON
 
