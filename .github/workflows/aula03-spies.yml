@@ -2,14 +2,14 @@ name: Aula03_spies
 on:
   push:
     paths:
-      - 'module2/aula02-stubs/**'
+      - 'superModule/aula02-stubs/**'
       - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
-      - 'module2/aula02-stubs/**'
+      - 'superModule/aula02-stubs/**'
       - '.github/workflows/**'
     types:
       - opened
@@ -30,11 +30,11 @@ jobs:
         with:
           node-version: '17.x'
       - name: Install dependencies
-        run: cd module2/aula03-spies; npm ci
+        run: cd superModule/aula03-spies; npm ci
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectBaseDir: module2/aula03-spies
+          projectBaseDir: superModule/aula03-spies
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

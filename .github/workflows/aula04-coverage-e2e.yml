@@ -2,14 +2,14 @@ name: Aula04_coverage_e2e
 on:
   push:
     paths:
-      - 'module2/aula04-coverage-e2e/**'
+      - 'superModule/aula04-coverage-e2e/**'
       - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
-      - 'module2/aula04-coverage-e2e/**'
+      - 'superModule/aula04-coverage-e2e/**'
       - '.github/workflows/**'
     types:
       - opened
@@ -30,13 +30,13 @@ jobs:
         with:
           node-version: '17.x'
       - name: Install dependencies
-        run: cd module2/aula04-coverage-e2e; npm ci
+        run: cd superModule/aula04-coverage-e2e; npm ci
       - name: Run NYC coverage
-        run: cd module2/aula04-coverage-e2e; npm run test:cov
+        run: cd superModule/aula04-coverage-e2e; npm run test:cov
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectBaseDir: module2/aula04-coverage-e2e
+          projectBaseDir: superModule/aula04-coverage-e2e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
